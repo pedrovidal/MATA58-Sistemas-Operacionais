@@ -22,9 +22,9 @@ int main(){
 	cin >> numeroDeProcessos;
 	processo vet[numeroDeProcessos], chegaram[numeroDeProcessos];
 	for (int i=0; i<numeroDeProcessos; i++){
-		cout << "Digite o tempo de chegada do processo " << (char)(i+'A') << endl;
+		cout << "Digite o tempo de chegada do processo: " << (char)(i+'A') << endl;
 		cin >> vet[i].chegada;
-		cout << "Digite a duracao do processo " << (char)(i+'A') << endl;
+		cout << "Digite a duracao do processo: " << (char)(i+'A') << endl;
 		cin >> vet[i].duracao;
 		vet[i].nome='A'+i;
 	}
