@@ -1,34 +1,13 @@
 #include <bits/stdc++.h>
+#include "processinho.h"
 using namespace std;
-
-struct processo{
-	int chegada, duracao, tempo;
-	char nome;
-};
-
-bool cmp(processo a, processo b){
-	if (a.chegada==b.chegada)
-		return a.duracao < b.duracao;
-	return a.chegada < b.chegada;
-}
 
 bool cmp2(processo a, processo b){
 	return a.duracao < b.duracao;
 }
 
-int main(){
-	int numeroDeProcessos;
-	cout << "Digite o numero de processos:\n";
-	cin >> numeroDeProcessos;
-	processo vet[numeroDeProcessos], chegaram[numeroDeProcessos];
-	for (int i=0; i<numeroDeProcessos; i++){
-		cout << "Digite o tempo de chegada do processo: " << (char)(i+'A') << endl;
-		cin >> vet[i].chegada;
-		cout << "Digite a duracao do processo: " << (char)(i+'A') << endl;
-		cin >> vet[i].duracao;
-		vet[i].nome='A'+i;
-	}
-	sort(vet, vet+numeroDeProcessos, cmp);
+void sjf(processo * vet, int numeroDeProcessos){
+	processo chegaram[numeroDeProcessos];
 	int tempo=vet[0].chegada, cont=0, n=numeroDeProcessos;
 	float turnaround=0;
 	string res;

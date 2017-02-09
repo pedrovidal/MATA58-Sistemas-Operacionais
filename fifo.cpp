@@ -1,14 +1,6 @@
 #include <bits/stdc++.h>
+#include "processinho.h"
 using namespace std;
-
-struct processo{
-	int chegada, duracao, tempo;
-	char nome;
-};
-
-bool cmp(processo a, processo b){
-	return a.chegada < b.chegada;
-}
 
 int main(){
 	int numeroDeProcessos;
@@ -43,4 +35,5 @@ int main(){
 	for (int i=0; i<numeroDeProcessos; i++)
 		cout << "Tempo de espera de " << vet[i].nome << " " << vet[i].tempo << endl;
 	cout << "Turnaround medio " << turnaround/numeroDeProcessos << endl;
+	sjf(vet, numeroDeProcessos);
 }
