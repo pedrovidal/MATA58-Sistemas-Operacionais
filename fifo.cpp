@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "processinho.hpp"
+#include "sjf.hpp"
 using namespace std;
 
 int main(){
