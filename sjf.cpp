@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "processinho.h"
+#include "processinho.hpp"
 using namespace std;
 
 bool cmp2(processo a, processo b){
