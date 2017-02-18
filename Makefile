@@ -1,14 +1,14 @@
 main: processinho.o sjf.o fifo.o main.o
-	g++ processinho.o sjf.o fifo.o main.o -o main
+	g++ -std=c++11 processinho.o sjf.o fifo.o main.o -o main
 
 processinho.o:
-	g++ -c processinho.cpp
+	g++ -std=c++11 -c processinho.cpp
 
 sjf.o:
-	g++ -c sjf.cpp
+	g++ -std=c++11 -c sjf.cpp
 
 fifo.o:
-	g++ -c fifo.cpp
+	g++ -std=c++11 -c fifo.cpp
 
 main.o:
-	g++ -c main.cpp
+	g++ -std=c++11 -c main.cpp
