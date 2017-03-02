@@ -4,6 +4,7 @@
 using namespace std;
 
 void fifo(processo * vet, int numeroDeProcessos) {
+	cout << "FIRST IN FIRST OUT" << endl;
 	int tempo=vet[0].chegada;
 	float turnaround=0;
 	string res;
@@ -24,4 +25,5 @@ void fifo(processo * vet, int numeroDeProcessos) {
 	for (int i=0; i<numeroDeProcessos; i++)
 		cout << "Tempo de espera de " << vet[i].nome << " " << vet[i].tempo << endl;
 	cout << "Turnaround medio " << turnaround/numeroDeProcessos << endl;
+	cout << endl;
 }
