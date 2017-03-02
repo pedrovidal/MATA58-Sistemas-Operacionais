@@ -3,6 +3,7 @@
 struct processo{
 	int chegada, duracao, tempo;
 	char nome;
+	string exec;
 };
 
 bool cmp(processo a, processo b);
