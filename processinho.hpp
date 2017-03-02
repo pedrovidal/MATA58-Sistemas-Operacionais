@@ -2,7 +2,7 @@
 #ifndef PROCESSINHO_H
 #define PROCESSINHO_H
 struct processo{
-	int chegada, duracao, tempo;
+	int chegada, duracao, tempo, deadline;
 	char nome;
 	std::string exec;
 };
