@@ -6,9 +6,11 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    int numeroDeProcessos;
+    int numeroDeProcessos, quantum;
 	cout << "Digite o numero de processos:\n";
 	cin >> numeroDeProcessos;
+	cout << "Digite o Quantum:\n"
+	cin >> quantum;
 	processo vet[numeroDeProcessos];
 	for (int i=0; i<numeroDeProcessos; i++){
 		cout << "Digite o tempo de chegada do processo: " << (char)(i+'A') << endl;
